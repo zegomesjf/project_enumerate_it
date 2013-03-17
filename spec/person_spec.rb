@@ -8,12 +8,12 @@ describe Person do
       subject.name = "Carlos Eduardo"
     end
 
-    it "have be Mr" do
+    it "married? should be true when is married" do
       subject.relationship_status = RelationshipStatus::MARRIED
       expect(subject.married?).to be_true
     end
 
-    it "have be Sr" do
+    it "single? should be true when is single" do
       subject.relationship_status = RelationshipStatus::SINGLE
       expect(subject.single?).to be_true
     end
