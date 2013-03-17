@@ -1,5 +1,5 @@
 require "spec_helper"
-require "Person"
+require "person"
 
 describe Person do
   context "Create Person with relationship status" do
