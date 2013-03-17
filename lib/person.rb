@@ -9,11 +9,7 @@ class Person
 
   has_enumeration_for :relationship_status, :with => RelationshipStatus, :create_helpers => true
 
-  def pronoun_of_treatment
-    if self.married?
-      "Sr. #{name}"
-    else
-      "Mr. #{name}"
-    end
+  def decorator
+    PersonDecorator.new self
   end
 end
